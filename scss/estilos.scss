@@ -1,0 +1,95 @@
+.boton {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px
+}
+
+.boton--comprar{
+    @extend .boton;
+    background-color: blue;
+    color: white;
+}
+
+.boton--vender{
+    @extend .boton;
+    background-color: red;
+    color: white;
+}
+.boton--nostock{
+    @extend .boton;
+    background-color: yellow;
+    color: white;
+}
+
+$dolar: 220;
+
+.dolaroficial {
+    @if $dolar <210 {
+        color: blue;
+    } @else if $dolar <260 {
+        color: red;
+    } @else {
+        color: yellow;
+    }
+}
+
+.top10{
+    font-size: 20px;
+    padding: 20px;
+}
+
+main {
+    color: white;
+    background-color: black;
+    padding: 50px;
+    border: 8px solid gray;
+}
+
+header{
+    color: black;
+    background-color: darkgrey;
+    padding: 20px;
+    border: 6px solid gray;
+}
+
+.titulo{
+    font-size: 27px;
+    text-align: center;
+}
+
+$dimension: 800px;
+@each $empresa in tesla, apple, samsung, amazon {
+    .#{$empresa}-fondo {
+        width: $dimension * 2;
+        height: $dimension;
+        background-image: url("../images/#{$empresa}.png");
+        border: 1px solid black;
+        background-repeat: no-repeat;
+        background-size: 1000px;
+        background-position: center center;
+    }
+}
+@mixin tamaño($width, $height) {
+    width: $width;
+    height: $height;
+}
+.dinero {
+    @include tamaño(75px, 55px);
+}
+
+.publicidad{
+    border: 6px solid gray;
+    border-radius: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}

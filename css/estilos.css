@@ -1,0 +1,94 @@
+.boton, .boton--comprar, .boton--vender, .boton--nostock {
+  width: 150px;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px; }
+
+.boton--comprar {
+  background-color: blue;
+  color: white; }
+
+.boton--vender {
+  background-color: red;
+  color: white; }
+
+.boton--nostock {
+  background-color: yellow;
+  color: white; }
+
+.dolaroficial {
+  color: red; }
+
+.top10 {
+  font-size: 20px;
+  padding: 20px; }
+
+main {
+  color: white;
+  background-color: black;
+  padding: 50px;
+  border: 8px solid gray; }
+
+header {
+  color: black;
+  background-color: darkgrey;
+  padding: 20px;
+  border: 6px solid gray; }
+
+.titulo {
+  font-size: 27px;
+  text-align: center; }
+
+.tesla-fondo {
+  width: 1600px;
+  height: 800px;
+  background-image: url("../images/tesla.png");
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-position: center center; }
+
+.apple-fondo {
+  width: 1600px;
+  height: 800px;
+  background-image: url("../images/apple.png");
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-position: center center; }
+
+.samsung-fondo {
+  width: 1600px;
+  height: 800px;
+  background-image: url("../images/samsung.png");
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-position: center center; }
+
+.amazon-fondo {
+  width: 1600px;
+  height: 800px;
+  background-image: url("../images/amazon.png");
+  border: 1px solid black;
+  background-repeat: no-repeat;
+  background-size: 1000px;
+  background-position: center center; }
+
+.dinero {
+  width: 75px;
+  height: 55px; }
+
+.publicidad {
+  border: 6px solid gray;
+  border-radius: 15px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px; }
